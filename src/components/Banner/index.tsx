@@ -9,7 +9,11 @@ const Banner = () => {
   const [title, setTitle] = useState<string>("/Recetas");
 
   useEffect(() => {
-    if (pathname !== "/") setTitle(pathname);
+    if (pathname !== "/") {
+      setTitle(pathname);
+    } else {
+      setTitle("/Recetas");
+    }
   }, [pathname]);
 
   return (

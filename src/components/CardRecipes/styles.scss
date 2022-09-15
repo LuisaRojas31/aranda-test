@@ -1,0 +1,118 @@
+.card-recipes {
+  background: transparent linear-gradient(180deg, #e9f1fa 0%, #ffffff 100%) 0%
+    0% no-repeat padding-box;
+  box-shadow: 0px 5px 9px #8395a766;
+  border-radius: 10px;
+  opacity: 1;
+  width: 160px;
+  height: 160px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+
+  &__image {
+    width: 110px;
+    height: 106px;
+    position: absolute;
+    margin-top: -40px;
+  }
+
+  &__container-title {
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+    justify-content: space-between;
+
+    h1 {
+      color: var(--unnamed-color-d84a4a);
+      text-align: center;
+      font: normal normal normal 20px/24px Poppins;
+      letter-spacing: -0.4px;
+      color: #d84a4a;
+      margin: 0;
+      margin-right: 4px;
+    }
+
+    h2 {
+      color: var(--unnamed-color-d84a4a);
+      text-align: center;
+      font: normal normal normal 20px/24px MonsterClubhouse;
+      letter-spacing: -0.4px;
+      color: #d84a4a;
+      margin-top: 3px;
+    }
+  }
+
+  &__container-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+
+    &--points {
+      span {
+        color: var(--unnamed-color-425966);
+        text-align: center;
+        font: normal normal normal 17px/26px Poppins;
+        letter-spacing: -0.34px;
+        color: #425966;
+        opacity: 1;
+        margin-top: -4px;
+      }
+    }
+
+    &--favorite {
+      img {
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1278px) {
+  .card-recipes {
+    width: 250px;
+    height: 250px;
+
+    &__image {
+      width: 163px;
+      height: 157px;
+    }
+
+    &__container-title {
+      margin-top: 120px;
+      h1 {
+        font: normal normal normal 30px/36px Poppins;
+      }
+
+      h2 {
+        font: normal normal normal 30px/36px MonsterClubhouse;
+      }
+    }
+  }
+}
+
+@media (min-width: 1279px) {
+  .card-recipes {
+    width: 266px;
+    height: 269px;
+
+    &__image {
+      width: 163px;
+      height: 157px;
+    }
+
+    &__container-title {
+      margin-top: 150px;
+      h1 {
+        font: normal normal normal 30px/36px Poppins;
+      }
+
+      h2 {
+        font: normal normal normal 30px/36px MonsterClubhouse;
+      }
+    }
+  }
+}

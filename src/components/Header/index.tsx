@@ -1,16 +1,17 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import homeIcon from "../../assets/icons/ic_home.svg";
 import "./styles.scss";
 
 const Header = () => {
   const { pathname } = useLocation();
+  const navigate = useNavigate();
   return (
     <section className="header" id="header">
       <div className="header__logo">
         <h1>Recipe</h1>
         <h2>App</h2>
       </div>
-      <div className="header__menu-icon">
+      <div onClick={() => navigate("/")} className="header__menu-icon">
         <img src={homeIcon} alt="home" />
       </div>
       <div className="header__menu">
