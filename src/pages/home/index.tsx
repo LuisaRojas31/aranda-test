@@ -2,6 +2,7 @@ import CardRecipes from "../../components/CardRecipes";
 import TitleBody from "../../components/TitleBody";
 import imageOne from "../../assets/Ojingeo-muchim-5.png";
 import imageTwo from "../../assets/Ojingeo-muchim.png";
+import imageThree from "../../assets/Ojingeo-muchim-1.png";
 import "./styles.scss";
 
 const Home = () => {
@@ -28,7 +29,7 @@ const Home = () => {
         <CardRecipes
           title="Ojingeo"
           subtitle="Muchim"
-          image={imageOne}
+          image={imageThree}
           isFavorite={true}
           points="5.0"
           key={1}

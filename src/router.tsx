@@ -3,7 +3,7 @@ import Banner from "./components/Banner";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import MobileMenu from "./components/MobileMenu";
-import { Home } from "./pages";
+import { Home, Vegetarians } from "./pages";
 
 const Router = () => {
   return (
@@ -13,7 +13,7 @@ const Router = () => {
       <MobileMenu />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="vegetarianos" element={<div>vegetarianos</div>} />
+        <Route path="vegetarianos" element={<Vegetarians />} />
         <Route path="principales" element={<div>principales</div>} />
         <Route path="tortas" element={<div>tortas</div>} />
         <Route path="rapida" element={<div>rapida</div>} />
