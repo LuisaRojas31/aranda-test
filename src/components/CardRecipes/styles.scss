@@ -71,6 +71,42 @@
     }
   }
 }
+.card-dos {
+  position: relative;
+  opacity: 0;
+  top: -120px;
+
+  text-align: center;
+  &__container-title {
+    margin-top: -15px;
+    h1 {
+      font: normal normal normal 17px/20px MonsterClubhouse;
+      color: #d84a4a;
+    }
+    h2 {
+      font: normal normal normal 15px/20px Poppins;
+      color: #425966;
+      margin: inherit;
+    }
+  }
+}
+
+.card-recipes:hover {
+  transition: 0.1s 0.1s height, 0.5s 0.1s padding, 0.5s 0.1s margin, 0.3s color,
+    0.2s visibility;
+  height: 350px;
+  .card-recipes {
+    &__container-title {
+      opacity: 0;
+    }
+    &__container-footer {
+      opacity: 0;
+    }
+  }
+  .card-dos {
+    opacity: 1;
+  }
+}
 
 @media (min-width: 768px) and (max-width: 1278px) {
   .card-recipes {
@@ -93,6 +129,9 @@
         font: normal normal normal 30px/36px MonsterClubhouse;
       }
     }
+  }
+  .card-recipes:not(:hover) {
+    pointer-events: none;
   }
 }
 

@@ -1,4 +1,4 @@
-.vegetarians {
+.fast--food {
   margin-right: auto;
   margin-left: auto;
   width: 100%;
@@ -9,13 +9,13 @@
 }
 
 @media (min-width: 768px) and (max-width: 1278px) {
-  .vegetarians {
+  .fast--food {
     width: 100%;
   }
 }
 
 @media (min-width: 1279px) {
-  .vegetarians {
+  .fast--food {
     justify-content: space-evenly;
     width: 90%;
   }
